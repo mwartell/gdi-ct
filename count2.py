@@ -12,20 +12,20 @@ def ice_cream_counts(path):
 
     return counts
 
-heading = """
-<!DOCTYPE html>
-<html><head><title>Ice Cream Preferences</title></head><body>
-<table border="1">
-<tr> <th>preference</th> <th>female</th> <th>male</th> </tr>""".lstrip()
-table_row = "<tr> <td>{}</td> <td>{}</td> <td>{}</td> </tr>"
-closing = "</table></body></html>"
 
 def write_html(counts):
+    flavors = {'p': 'pistachio', 's': 'strawberry'}
+    heading = """
+    <!DOCTYPE html>
+    <html><head><title>Ice Cream Preferences</title></head><body>
+    <table border="1">
+    <tr> <th>preference</th> <th>female</th> <th>male</th> </tr>""".lstrip()
+    table_row = '<tr> <td>{}</td> <td>{}</td> <td>{}</td> </tr>'
+
     print(heading)
-    for flavor in ['strawberry', 'pistachio']:
-        p = flavor[0]
-        print(table_row.format(flavor, counts['f'][p], counts['m'][p]))
-    print(closing)
+    for f, flavor in flavors.items():
+        print(table_row.format(flavor, counts['f'][f], counts['m'][f]))
+    print('</table></body></html>')
 
 counts = ice_cream_counts('ice-cream.csv')
 write_html(counts)
