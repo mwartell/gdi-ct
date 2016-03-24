@@ -17,9 +17,10 @@ def fake_data(outf, n=20):
     """Write n rows of fake data to outf."""
     csvw = csv.writer(outf)
     idn = id_numbers()
+    csvw.writerow('respondent gender preference'.split())
     for i in range(n):
         # case number, sex, flavor
-        csvw.writerow([idn.next(), random.choice('mf'), random.choice('ps')])
+        csvw.writerow([next(idn), random.choice('mf'), random.choice('ps')])
 
 if __name__ == '__main__':
     fake_data(sys.stdout)
