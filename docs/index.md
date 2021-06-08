@@ -64,7 +64,8 @@ detection systems.
 
 
 
-# Self-Study — Pedagogical Materials for Learning to Evaluate Adversarial Robustness
+# Self-Study
+## Pedagogical Materials for Learning to Evaluate Adversarial Robustness
 
 The [Google Research SelfStudy repository][google] contains a collection of defenses aimed at researchers who wish to learn
 how to properly evaluate the robustness of adversarial example defenses. While there is
