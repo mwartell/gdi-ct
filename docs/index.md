@@ -1,4 +1,5 @@
-# GARD — Guaranteeing AI Robustness Against Deception
+# GARD
+## Guaranteeing AI Robustness Against Deception
 
 The growing sophistication and ubiquity of machine learning (ML) components in advanced
 systems dramatically expands capabilities, but also increases the potential for new
@@ -26,7 +27,8 @@ collaboratively generating platforms, libraries, datasets, and training material
 holistically evaluate the robustness of AI models and defenses to adversarial attacks.
 
 
-# Team — Holistic Evaluation of GARD-produced Defenses
+# Team
+## Holistic Evaluation of GARD-produced Defenses
 
 ![University of Chicago Logo][uchicago]
 **TODO: @davidslater is there a blurb for UChicago?**
